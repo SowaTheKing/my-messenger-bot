@@ -1,6 +1,7 @@
 # coding=utf-8
 from google import *
 from weather import *
+from ztm import *
 
 greeting = (["hi", "hey", "hello"])
 
@@ -29,6 +30,9 @@ def classify(msg):
         
         No kurwa chciałbym być jak Paweł. Moze nawet nie ten najfajniejszy Maryszczuk, ale bylejaki. I tak lepszy od połowy
         śmierdzących polaczków."""
+
+    if (msg == "ztm"):
+        return ztm(1066)
 
     if (msg.find("weather") == 0):
         try:
