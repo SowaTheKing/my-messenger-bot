@@ -11,4 +11,4 @@ def ztm():
     text += str("Czas przybycia: " + str(p['delay'][0]['estimatedTime']) + "\n")
     text += str("Nazwa lini:" + str(p['delay'][0]['headsign']))
 
-    return (text)
+    return text
