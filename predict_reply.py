@@ -32,7 +32,7 @@ def classify(msg):
         śmierdzących polaczków."""
 
     if (msg.find("rozklad") == 0):
-        return "Srosklad"
+        return ztm()
 
     if (msg.find("weather") == 0):
         try:
