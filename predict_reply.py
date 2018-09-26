@@ -31,8 +31,8 @@ def classify(msg):
         No kurwa chciałbym być jak Paweł. Moze nawet nie ten najfajniejszy Maryszczuk, ale bylejaki. I tak lepszy od połowy
         śmierdzących polaczków."""
 
-    if (msg.find("ztm") == 0):
-        return ztm(1066)
+    if (msg.find("rozklad") == 0):
+        return ztm()
 
     if (msg.find("weather") == 0):
         try:

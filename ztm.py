@@ -1,11 +1,9 @@
 import requests
-import pyowm
 
 
-def ztm(stop):
-    city = str(stop)
-    site = 'http://87.98.237.99:88/delays?stopId=1066' \
-           #+ str(stop)
+def ztm():
+
+    site = 'http://87.98.237.99:88/delays?stopId=1066'
     r = requests.get(site)
     p = r.json()
     text = ""
