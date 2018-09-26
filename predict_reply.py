@@ -23,6 +23,12 @@ def classify(msg):
         query = msg.split()[1]
         return search(query, num=10)
 
+    if (msg == "pawel"):
+        return """No Paweł to jest kurwa prze-chuj. Jezu co to jest za diabeł, developer pierwsza klasa a jeszcze jaki prztstojny.
+        
+        No kurwa chciałbym być jak Paweł. Moze nawet nie ten najfajniejszy Maryszczuk, ale bylejaki. I tak lepszy od połowy
+        śmierdzących polaczków."""
+
     if (msg.find("weather") == 0):
         try:
             city = msg.split()[1]
