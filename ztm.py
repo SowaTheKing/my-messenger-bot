@@ -10,5 +10,5 @@ def ztm():
     text += str("Numer: " + str(p['delay'][0]['tripId']) + "\n")
     text += str("Czas przybycia: " + str(p['delay'][0]['estimatedTime']) + "\n")
     text += str("Nazwa lini:" + str(p['delay'][0]['headsign']))
-
+    print "DEBUG: Returning %sn" % text
     return text
