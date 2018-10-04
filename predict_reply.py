@@ -32,7 +32,11 @@ def classify(msg):
         śmierdzących polaczków."""
 
     if (msg.find("rozklad") == 0):
-        return ztm()
+        try:
+            stop_name = msg.split()[1]
+            return ztm(stop_name_to_id(stop_name))
+        except:
+            return "Please enter valid stop name"
 
     if (msg.find("weather") == 0):
         try:

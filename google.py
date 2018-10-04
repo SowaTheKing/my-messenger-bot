@@ -1,6 +1,5 @@
-import urllib
-import json
 import pprint
+
 from googleapiclient.discovery import build
 
 my_cse_id = "006302419111304791343:vbl2wy1dhzm"

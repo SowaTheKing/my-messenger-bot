@@ -1,5 +1,4 @@
 import requests
-import datetime
 
 base_url = "http://api.railwayapi.com/v2/"
 
