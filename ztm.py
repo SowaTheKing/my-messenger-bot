@@ -5,7 +5,8 @@ import requests
 
 def ztm(stop_id):
     log("[***] Obtaining ZTM for %")
-    site = 'http://87.98.237.99:88/delays?stopId=' + stop_id
+    site = 'http://87.98.237.99:88/delays?stopId=' + str(stop_id)
+    log(site)
     r = requests.get(site)
     p = r.json()
     text = ""
