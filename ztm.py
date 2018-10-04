@@ -4,8 +4,8 @@ import requests
 
 
 def ztm(stop_id):
-
-    site = 'http://87.98.237.99:88/delays?stopId=' + str(stop_id)
+    log("[***] Obtaining ZTM for %")
+    site = 'http://87.98.237.99:88/delays?stopId=' + stop_id
     r = requests.get(site)
     p = r.json()
     text = ""
@@ -19,9 +19,9 @@ def ztm(stop_id):
 def stop_name_to_id(name):
     log("Trying to assign %s to ID" % name)
     switcher = {
-        "Armii Krajowej"    :   36410,
-        "Wrzeszcz PKP"      :   116,
-        "Chelm Witosa"      :   129
+        "Armii Krajowej"    :   "36410",
+        "Wrzeszcz PKP"      :   "116",
+        "Chelm Witosa"      :   "129"
     }
     return switcher.get(name, "Invalid Id")
 
