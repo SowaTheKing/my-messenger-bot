@@ -1,3 +1,5 @@
+import sys
+
 import requests
 
 
@@ -15,9 +17,15 @@ def ztm(stop_id):
 
 
 def stop_name_to_id(name):
+    log("Trying to assign %s to ID" % name)
     switcher = {
         "Armii Krajowej"    :   36410,
         "Wrzeszcz PKP"      :   116,
         "Chelm Witosa"      :   129
     }
     return switcher.get(name, "Invalid Id")
+
+def log(message):
+    print str(message)
+    sys.stdout.flush()
+
