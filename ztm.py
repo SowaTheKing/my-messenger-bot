@@ -24,7 +24,7 @@ def stop_name_to_id(name):
         "Wrzeszcz PKP"      :   "116",
         "Chelm Witosa"      :   "129"
     }
-    return switcher.get(name, "Invalid Id")
+    return switcher.get(name, "116")
 
 def log(message):
     print str(message)
