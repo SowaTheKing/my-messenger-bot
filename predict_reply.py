@@ -33,7 +33,7 @@ def classify(msg):
 
     if (msg.find("rozklad") == 0):
         try:
-            stop_name = msg.split(" ", 1)
+            stop_name = msg.split(" ", 1)[1]
             return ztm(stop_name_to_id(stop_name))
         except:
             return "Please enter valid stop name"
